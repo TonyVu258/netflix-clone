@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "export": "next export",
     "lint": "next lint",
     "preinstall": "npx npm-force-resolutions"
   },
@@ -29,6 +30,7 @@
     "react-icons": "^4.8.0",
     "react-player": "^2.12.0",
     "recoil": "^0.7.7",
+    "sharp": "^0.32.0",
     "tailwind-scrollbar-hide": "^1.1.7"
   },
   "devDependencies": {

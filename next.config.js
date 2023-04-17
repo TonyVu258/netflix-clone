@@ -4,6 +4,7 @@ const nextConfig = {
   images: {
     domains: ['image.tmdb.org', 'themoviedb.org'],
   },
+  distDir: 'build',
 };
 
 module.exports = nextConfig;

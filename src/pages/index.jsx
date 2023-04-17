@@ -19,7 +19,6 @@ export default function Home({
   products,
 })  {
   const showModal = useRecoilValue(modalState)
-  const movie = useRecoilValue(movieState)
   return (
     <div className="relative h-screen bg-gradient-to-b lg:h-[140vh]">
       <Head>

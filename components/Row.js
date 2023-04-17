@@ -3,20 +3,20 @@ import Thumbnail from "../components/Thumbnail";
 import { useRef, useState } from "react";
 
 // shuffle movie in the objmovies
-function shuffle(sourceObj) {
-  for (var i = 0; i < sourceObj.length - 1; i++) {
-    var j = i + Math.floor(Math.random() * (sourceObj.length - i));
-    var temp = sourceObj[j];
-    sourceObj[j] = sourceObj[i];
-    sourceObj[i] = temp;
-  }
-  return sourceObj;
-}
+// function shuffle(sourceObj) {
+//   for (var i = 0; i < sourceObj.length - 1; i++) {
+//     var j = i + Math.floor(Math.random() * (sourceObj.length - i));
+//     var temp = sourceObj[j];
+//     sourceObj[j] = sourceObj[i];
+//     sourceObj[i] = temp;
+//   }
+//   return sourceObj;
+// }
 
 function Row({ title, movies }) {
   const rowRef = useRef(null);
   const [isMoved, setIsMoved] = useState(false);
-  const shuffledMovie = shuffle(movies);
+  // const shuffledMovie = shuffle(movies);
   const handleClick = (direaction) => {
     setIsMoved(true);
     if (rowRef.current) {
@@ -48,7 +48,7 @@ function Row({ title, movies }) {
           ref={rowRef}
           className="flex scrollbar-hide items-center space-x-0.5 overflow-x-scroll md:space-x-2.5 md:p-2"
         >
-          {shuffledMovie.map((movie) => (
+          {movies.map((movie) => (
             <Thumbnail key={movie.id} movie={movie} />
           ))}
         </div>
