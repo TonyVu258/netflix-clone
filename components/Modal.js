@@ -27,9 +27,7 @@ function Modal() {
       const data = await fetch(
         `https://api.themoviedb.org/3/${
           movie?.media_type === "tv" ? "tv" : "movie"
-        }/${movie?.id}?api_key=${
-          process.env.NEXT_PUBLIC_API_KEY
-        }&language=en-US&append_to_response=videos`
+        }/${movie?.id}?api_key=37398e1c10cbc7e8c622b024e6a18bc0&language=en-US&append_to_response=videos`
       )
         .then((response) => response.json())
         .catch((err) => console.log(err.message));
