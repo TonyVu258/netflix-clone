@@ -1,6 +1,9 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+Demo project: https://nextjs-netflix.netlify.app/
+
 ## Getting Started
+![image](https://github.com/TonyVu258/netflix-clone/assets/106571192/d23ab88f-cb19-4403-85c8-bf1c1e4e656d)
 
 First, run the development server:
 
